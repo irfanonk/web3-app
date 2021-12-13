@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import web3 from "./utils/web3";
 
 function App() {
+  web3.eth.getAccounts().then(console.log);
+  console.log("env", process.env);
   return (
     <div className="App">
       <header className="App-header">
